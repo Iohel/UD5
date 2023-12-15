@@ -7,7 +7,7 @@ canvas = document.getElementById('2d-animation-canvas');
 context = canvas.getContext('2d');
 
 function draw(x, y) {
-  context.fillStyle = "white";
+  context.fillStyle = "grey";
   context.beginPath();
   context.arc(x,y,10,0,Math.PI * 2,true);
   context.fill();
@@ -31,7 +31,7 @@ function startAnimation(){
       sound.play();
     }
   
-    if (ballY < 0 || ballY > 200){
+    if (ballY < 0 || ballY > canvas.height){
       directionY *= -1;
       sound.play();
     }

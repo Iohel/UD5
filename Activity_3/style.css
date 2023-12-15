@@ -3,4 +3,10 @@ body{
 }
 input{
     width: 50px;
+    background-color: gray;
+    color: white;
+}
+button{
+    background-color: gray;
+    color: white;
 }
